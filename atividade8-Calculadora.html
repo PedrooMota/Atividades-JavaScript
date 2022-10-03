@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <script type="text/javascript"></script>
+
+</head>
+
+<body>  
+    <h1> Calculadora Javascriptada do Mota</h1>
+
+    <input type="number" name="numero1" id="numero1">
+    <br>
+    <input type="number" name="numero2" id="numero2">
+    <br>
+    <button onclick='soma()'>Soma</button>
+    <button onclick='subtracao()'>Subtração</button> 
+    <br>
+    <button onclick='divisao()'>Divisão</button> 
+    <button onclick='multiplicacao()'>Multiplicação</button> 
+    <br>
+    <span>:</span>   
+
+    <script>
+        var numero1 = document.getElementById("numero1");
+        var numero2 = document.getElementById("numero2");
+        var result = document.querySelector('span');
+        function soma(){
+            result.innerHTML = parseInt(numero1.value) +  parseInt(numero2.value);
+        }
+        function subtracao(){
+            result.innerHTML = parseInt(numero1.value) -  parseInt(numero2.value);
+        }
+        function divisao(){
+            result.innerHTML = parseInt(numero1.value) /  parseInt(numero2.value);
+        }
+        function multiplicacao(){
+            result.innerHTML = parseInt(numero1.value) *  parseInt(numero2.value);
+        }
+    
+
+    </script>
+
+
+</body>
+</html>
